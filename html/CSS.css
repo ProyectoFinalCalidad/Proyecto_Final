@@ -1,0 +1,89 @@
+body{
+	/*background-image: url('img/stars.gif');*/
+	background-color: black;
+}
+
+#encabezado{
+	color: #7ea8a8;
+	font-size: 4em;
+	font-weight: bolder;
+	font font-family: starwars;
+	transition: font-size 3s;
+	transition-timing-function: ease-in-out;
+}
+
+
+#encabezado:hover{
+font-size: 7em;
+
+}
+#nombres{
+		font-family: starwars; 
+	font-size: 2em;
+	color: #ffd800;
+	text-shadow: 0 0 12px #db2400, 0 0 10px #ffd800; 
+	background-color: black;
+	height: 200%;
+	width: 150%; 
+	opacity: 0.5;
+	padding: 2%;
+}
+#portada{
+	height: 40%;
+	width: 40%;
+	transition: width 2s, height 2s;
+}
+
+#portada:hover{
+	width: 70%;
+	height: 70%;
+}
+
+#presentacion{
+	width: 100%;
+	height: 100%;
+	
+	}
+
+	#foto{
+	width: 10%; 
+  	height: 0%;
+  	border-radius: 50%;
+}
+
+#girl{
+	width: 15%; 
+  	height: 15%;
+	border-radius: 40%;
+}
+
+#cat1, #cat2, #cat3{
+width: 20%;
+
+}
+
+#git, #git3{  
+margin: auto;
+float: left;
+padding: 10px;
+ box-shadow: 10px 10px 5px blue;
+ width: 50%;
+ background-color: yellow;
+
+}
+
+#git2{
+margin: auto;
+float: right; 
+padding: 10px;
+ box-shadow: 10px 10px 5px blue;
+ width: 50%;
+ background-color: yellow;
+
+}
+
+#txt, #txt1, #txt2{
+	color: blue;
+	font-size: 2em; 
+
+}

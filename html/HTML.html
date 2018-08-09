@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proyecto Final</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<script>
+$(document).ready(function(){
+	$('#foto').mouseenter(function(){
+		$('#nombres').slideToggle();
+	});
+});
+
+
+$(document).ready(function(){
+	$('#foto').mouseleave(function(){
+		$('#nombres').slideToggle();
+		});
+	});
+
+
+$(document).ready(function(){
+	$('#cat1').click(function(){
+		$("#txt").toggle();
+	});
+});
+
+$(document).ready(function(){
+	$('#cat2').click(function(){
+		$("#txt1").toggle();
+	});
+});
+
+$(document).ready(function(){
+	$('#cat3').click(function(){
+		$("#txt2").toggle();
+	});
+});
+
+</script>
+
+
+<body>
+
+<!--Portada-->
+<div id="portada" align="left">
+
+		<img id="foto" src="img/octobiwan.jpg" width="160" height="150" onclick="$">
+	
+	<div id="presentacion" align="center"> 
+		<p align="center" id="nombres" style="display: none">
+			Fidélitas<br>Integrantes:<br>Margarita Obando Segura<br>Erley <br>Profesor<br>Arturo Ramirez Hegg<br>Calidad del software<br>
+			<img src="img/1366_2000.jpg" id="girl" width="300" height="300">
+		</p>
+		</div>
+			
+	</div>
+ <br>
+
+
+
+
+
+<div id="titulo">
+	<!--Titulo-->
+ 	<h2 id="encabezado" align="center">
+ 		GITHUB
+ 	</h2>
+</div>
+
+	<br>
+	<br>
+
+ <div id="git" align="center" >
+	<img src="img/foundingfather_v2.png" id="cat1" align="center">
+ 	<p id="txt" style="display: none;">
+ 		Es una  herramienta gratuita de open source para el manejo de control de versiones.<br>
+		GitHub permite la administración de proyectos de manera fácil,  eficiente y rápida, además es una herramienta donde no se necesita saber código para poder manejarla.  
+ 	</p>
+</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+
+<div id="git2" align="center" >
+	<img src="img/filmtocat.png" id="cat2" align="center">
+	<p id="txt1" style="display: none;">
+		Una característica que hace a GIT única en cuanto a las herramientas de gestión de configuración es él Branching and Merging (Ramificación y Fusión).<br> 
+		<b>-El Branching (ramificación): </b>Consta en crear varias versiones del mismo código que son independientes del él branch master que es considerado él branch definitivo.  Se pueden crear la cantidad que sea necesario. <br>
+		<b>-El Merge (Fusión):</b> Tiene la función de fusionar él o los branch al master una vez que se hayan concluidos los cambios deseados. 
+	</p>
+ </div>
+ 	
+ 	<br>
+ 	<br>
+ 	<br>
+
+<div id="git3" align="right">
+	<img src="img/stormtroopocat.png" id="cat3">
+	<p id="txt2" style="display: none;">
+		Hola
+	</p>
+</div>
+
+
+
+
+ 
+
+</body>
+</html>
