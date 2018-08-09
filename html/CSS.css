@@ -57,7 +57,7 @@ font-size: 7em;
 	border-radius: 40%;
 }
 
-#cat1, #cat2, #cat3{
+#cat1, #cat2, #cat3, cat4{
 width: 20%;
 
 }
@@ -72,7 +72,7 @@ padding: 10px;
 
 }
 
-#git2{
+#git2, #git4{
 margin: auto;
 float: right; 
 padding: 10px;
@@ -82,7 +82,7 @@ padding: 10px;
 
 }
 
-#txt, #txt1, #txt2{
+#txt, #txt1, #txt2, #txt3{
 	color: blue;
 	font-size: 2em; 
 
