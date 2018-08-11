@@ -17,6 +17,11 @@ body{
 font-size: 7em;
 
 }
+
+p{
+ style="display: none"
+}
+
 #nombres{
 		font-family: starwars; 
 	font-size: 2em;
