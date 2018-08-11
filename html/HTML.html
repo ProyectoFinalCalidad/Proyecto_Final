@@ -83,13 +83,10 @@ $(document).ready(function(){
 
  <div id="git" align="center" >
 	<img src="img/foundingfather_v2.png" id="cat1" align="center">
- 	<p id="txt">
+ 	<p id="txt" >
  		<b>Bienvenido a GitHub</b>
  		<br>
  		Es un sistema  de control de versiones, gratuito, de código abierto que permite el manejo de proyectos en colaboración de manera fácil, rápida y eficiente.
-		<br>
-		<b>Ventaja</b>
-		No se necesita saber programar para utlizar GitHub.
  	</p>
 </div>
 	
@@ -100,10 +97,24 @@ $(document).ready(function(){
 
 <div id="git2" align="center" >
 	<img src="img/filmtocat.png" id="cat2" align="center">
-	<p id="txt1">
-		Una característica que hace a GIT única en cuanto a las herramientas de gestión de configuración es él Branching and Merging (Ramificación y Fusión).<br> 
-		<b>-El Branching (ramificación): </b>Consta en crear varias versiones del mismo código que son independientes del él branch master que es considerado él branch definitivo.  Se pueden crear la cantidad que sea necesario. <br>
-		<b>-El Merge (Fusión):</b> Tiene la función de fusionar él o los branch al master una vez que se hayan concluidos los cambios deseados. 
+	<p id="txt1" >
+		
+		<b>Paso 1: Crear un Repositorio</b>
+		<br>
+		-Seleccionar <i> New repository </i>
+		<br>
+		-Nombrar el Repositorio e.j <i>Prueba</i>
+		<br>
+		-Seleccionar <i>Initialize this repository with a README.</i> 
+		<br>
+		(El README contiene información sobre la funcionalidad del proyecto, es editable).
+		<br>
+		-Seleccionar <i>Create new file</i> para empezar con un archivo nuevo, o <i>Upload files</i> para subir un archivo a GitHub.  
+		<br><br>
+		<b>Repositorios:</b> Son utilizados para la organización de proyectos. Estos pueden contener archivos, folder, multimedia, hojas de cálculo, etc. <br>
+		Imaginelo como una archivero donde cada cajón es un repositorio que contiene varios tipos archivos. 
+		
+		
 	</p>
  </div>
  	
@@ -111,30 +122,107 @@ $(document).ready(function(){
  	<br>
  	<br>
 
-<div id="git3" align="right">
+<div id="git3" align="center">
 	<img src="img/stormtroopocat.png" id="cat3">
 	<p id="txt2" >
-		Hola!
+
+		<b>Paso 2: Crear un Branch</b>
+		<br>
+		-Ir al repositorio <i>Prueba</i>
+		<br>
+		-Click sobre el botón desplegable en la parte superior de la lista de archivos que dice <i> branch: master.</i>
+		<br>
+		-Escriba el nombre del branch e.j <i>Edit</i> dentro de la caja de texto. 
+		<br>
+		-Dar "Enter" en el teclado para crear el nuevo branch.
+		<br><br>
+		<b>Branching:</b> También ramificación, consta en crear varias versiones del mismo código que son independientes del el branch master que es considerado la rama definitiva.<br>  
+		La ramificación se utiliza para experimentar y editar antes de fusionarlas con la rama master. 
+		<br>
+		Se pueden crear una cantidad indefinida de brachs. 
+
 	</p>
 </div>
 
 	<br>
-	<br>
-	<br>
-	
-<div id="git4" align="left">
+ 	<br>
+ 	<br>
+ 	
+<div id="git4" align="center">
 	<img src="img/bouncercat.png" id="cat4">
 	<p id="txt3" >
-		Hey!
+
+		<b>Paso 3: Crear Edits & Commits</b>
+		<br>
+		-Seleccionar el archivo <i>README.md</i> <br>
+		(Para fines del ejemplo se usara este archivo) 
+		<br>
+		-Seleccionar el icono del <i> lápiz </i> en la parte superior derecha, para editar el archivo.
+		<br>
+		-Dentro del editor de texto escriba una "mini" biografía sobre usted.
+		<br>
+		-En la parte inferior, escriba un comentario, explicando sobre el cambio que realizo. 
+		<br>
+		-Click sobre el botón <i>Commit changes</i><br>
+		Nota: Verifique que el commit que esta realizando sea sobre el branch <i>Edit</i> 
+		<br><br>
+		<b>Edist & Commits: </b> Dentro de GitHub el “guardar cambios” se les llama commits.<br>
+		Cada commit viene acompañado de un mensaje, en donde el se describe el cambio que se realizó y por qué lo hizo.
+
+
 	</p>
 </div>
-	
-	<br>
-	<br>
-	<br>
-
-
+ 	
+ 	<br>
+ 	<br>
+ 	<br>
  
+<div id="git5" align="center">
+	<img src="img/daftpunktocat-thomas.gif" id="cat5">
+	<p id="txt4" >
+
+		<b>Paso 4: Open a Pull Request / Extraer una consulta</b>
+		<br>
+		-Seleccionar el botón <i>Pull request</i> en la barra superior izquierda.
+		<br>
+		-Seleccionar el botón <b id="verde">verde</b> <i>New pull request</i>
+		<br>
+		-En la parte superios izquierda, seleccione en la caja <i>compare: </i> y seleccione el branch <i>Edit</i> para comparar con el branch "master", el cual es el original. 
+		<br>
+		-Revise las comparaciones, el <b id="rojo">rojo</b>  indica el archivo original (branch master) y el verde indica los cambios que se realizaron dentro del branch <i>Edit</i>.
+		<br>
+		-Una vez satisfecho con los cambios realizados, seleccione el botón <b id="verde">verde</b> <i>Create Pull Request</i> para hacer una fusión entre el branch "master" (original) y el branch <i>Edit</i>  
+		<br>
+		-Dentro de la caja de texto describa los cambios realizados.
+		<br><br>
+		<b>Pull Request:</b>  Una vez que se hayan realizado los commits deseados, se crea un Pull request. <br>
+		Es la revisión y comparación de el branch master y el brach nuevo que se haya creado. <br>
+		Se presta para que otras personas revisen y comparen el código antes de realizar un merge.
+
+	</p>
+</div>
+
+	<br>
+ 	<br>
+ 	<br>
+
+<div id="git6" align="center">
+	<img src="img/trekkie.png" id="cat6">
+	<p id="txt5" >
+
+		<b>Paso 5: Merge / Fusión</b>
+		<br>
+		-Click sobre el botón <b id="verde">verde</b> <i> Merge pull request</i> para fusionar los cambios a "master". 
+		<br>
+		-Click <i>Confirm merge.</i>
+		<br>
+		-Continúe y elimine la branch <i>Edit</i>, ya que sus cambios se han incorporado al branch "master", con el botón  <b id="morado">morado</b> <i> Delete</i>.
+		<br><br>
+		<b>Merge: Permite fusionar el o los branch al master una vez que se hayan concluidos los cambios deseados.   
+</b>
+
+	</p>
+</div>
 
 </body>
 </html>
