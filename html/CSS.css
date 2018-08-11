@@ -19,7 +19,7 @@ font-size: 7em;
 }
 
 p{
- style="display: none"
+display: none;
 }
 
 #nombres{
