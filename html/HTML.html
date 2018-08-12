@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="CSS.css">
 	<meta charset="utf-8">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <script>
@@ -24,29 +25,41 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('#cat1').click(function(){
-		$("#txt").toggle();
+		$("#txt").slideToggle();
 	});
 });
 
 $(document).ready(function(){
 	$('#cat2').click(function(){
-		$("#txt1").toggle();
+		$("#txt1").slideToggle();
 	});
 });
 
 $(document).ready(function(){
 	$('#cat3').click(function(){
-		$("#txt2").toggle();
+		$("#txt2").slideToggle();
+	});
+});
+
+$(document).ready(function(){
+	$('#cat4').click(function(){
+		$("#txt3").slideToggle();
 	});
 });
 
 
 $(document).ready(function(){
-	$('#cat4').click(function(){
-		$("#txt3").toggle();
+	$('#cat5').click(function(){
+		$("#txt4").slideToggle();
 	});
 });
-	
+
+$(document).ready(function(){
+	$('#cat6').click(function(){
+		$("#txt5").slideToggle();
+	});
+});
+
 </script>
 
 
@@ -58,9 +71,9 @@ $(document).ready(function(){
 		<img id="foto" src="img/octobiwan.jpg" width="160" height="150" onclick="$">
 	
 	<div id="presentacion" align="center"> 
-		<p align="center" id="nombres">
-			Fidélitas<br>Integrantes:<br>Margarita Obando Segura<br>Erley <br>Profesor<br>Arturo Ramirez Hegg<br>Calidad del software<br>
-			<img src="img/1366_2000.jpg" id="girl" width="300" height="300">
+		<p align="center" id="nombres" >
+			Fidélitas<br>Integrantes:<br>Margarita Obando Segura<br>Erley Alpizar Saenz <br>Profesor<br>Arturo Ramirez Hegg<br>Calidad del software<br>
+			<img src="img/kimonotocat.png" id="cat0" width="160" height="150" >
 		</p>
 		</div>
 			
@@ -81,14 +94,18 @@ $(document).ready(function(){
 	<br>
 	<br>
 
- <div id="git" align="center" >
+	<div id="git" align="center" >
+		<span id="tool">GitHub</span>
 	<img src="img/foundingfather_v2.png" id="cat1" align="center">
  	<p id="txt" >
- 		<b>Bienvenido a GitHub</b>
+ 		<b id="paso">¿Qué es GitHub?</b>
  		<br>
  		Es un sistema  de control de versiones, gratuito, de código abierto que permite el manejo de proyectos en colaboración de manera fácil, rápida y eficiente.
  	</p>
 </div>
+
+	
+ 
 	
 	<br>
 	<br>
@@ -96,10 +113,11 @@ $(document).ready(function(){
 	<br>
 
 <div id="git2" align="center" >
+	<span id="tool2">Repositorio</span>
 	<img src="img/filmtocat.png" id="cat2" align="center">
 	<p id="txt1" >
 		
-		<b>Paso 1: Crear un Repositorio</b>
+		<b id="paso2"> Paso 1: Crear un Repositorio</b>
 		<br>
 		-Seleccionar <i> New repository </i>
 		<br>
@@ -111,7 +129,7 @@ $(document).ready(function(){
 		<br>
 		-Seleccionar <i>Create new file</i> para empezar con un archivo nuevo, o <i>Upload files</i> para subir un archivo a GitHub.  
 		<br><br>
-		<b>Repositorios:</b> Son utilizados para la organización de proyectos. Estos pueden contener archivos, folder, multimedia, hojas de cálculo, etc. <br>
+		<b id="pasos2">Repositorios:</b> Son utilizados para la organización de proyectos. Estos pueden contener archivos, folder, multimedia, hojas de cálculo, etc. <br>
 		Imaginelo como una archivero donde cada cajón es un repositorio que contiene varios tipos archivos. 
 		
 		
@@ -123,10 +141,11 @@ $(document).ready(function(){
  	<br>
 
 <div id="git3" align="center">
-	<img src="img/stormtroopocat.png" id="cat3">
+	<span id="tool3">Branch</span>
+	<img src="img/stormtroopocat.png" id="cat3" align="center">
 	<p id="txt2" >
 
-		<b>Paso 2: Crear un Branch</b>
+		<b id="paso3">Paso 2: Crear un Branch</b>
 		<br>
 		-Ir al repositorio <i>Prueba</i>
 		<br>
@@ -136,7 +155,7 @@ $(document).ready(function(){
 		<br>
 		-Dar "Enter" en el teclado para crear el nuevo branch.
 		<br><br>
-		<b>Branching:</b> También ramificación, consta en crear varias versiones del mismo código que son independientes del el branch master que es considerado la rama definitiva.<br>  
+		<b id="pasos3">Branching:</b> También ramificación, consta en crear varias versiones del mismo código que son independientes del el branch master que es considerado la rama definitiva.<br>  
 		La ramificación se utiliza para experimentar y editar antes de fusionarlas con la rama master. 
 		<br>
 		Se pueden crear una cantidad indefinida de brachs. 
@@ -144,15 +163,19 @@ $(document).ready(function(){
 	</p>
 </div>
 
+
 	<br>
  	<br>
  	<br>
+
+
  	
 <div id="git4" align="center">
-	<img src="img/bouncercat.png" id="cat4">
+	<span id="tool4">Edits & Commits</span>
+	<img src="img/bouncercat.png" id="cat4" align="center">
 	<p id="txt3" >
 
-		<b>Paso 3: Crear Edits & Commits</b>
+		<b id="paso4">Paso 3: Crear Edits & Commits</b>
 		<br>
 		-Seleccionar el archivo <i>README.md</i> <br>
 		(Para fines del ejemplo se usara este archivo) 
@@ -166,7 +189,7 @@ $(document).ready(function(){
 		-Click sobre el botón <i>Commit changes</i><br>
 		Nota: Verifique que el commit que esta realizando sea sobre el branch <i>Edit</i> 
 		<br><br>
-		<b>Edist & Commits: </b> Dentro de GitHub el “guardar cambios” se les llama commits.<br>
+		<b id="pasos4">Edist & Commits: </b> Dentro de GitHub el “guardar cambios” se les llama commits.<br>
 		Cada commit viene acompañado de un mensaje, en donde el se describe el cambio que se realizó y por qué lo hizo.
 
 
@@ -178,10 +201,11 @@ $(document).ready(function(){
  	<br>
  
 <div id="git5" align="center">
-	<img src="img/daftpunktocat-thomas.gif" id="cat5">
+	<span id="tool5">Pull Request</span>
+	<img src="img/daftpunktocat-thomas.gif" id="cat5" align="center">
 	<p id="txt4" >
 
-		<b>Paso 4: Open a Pull Request / Extraer una consulta</b>
+		<b id="paso5">Paso 4: Open a Pull Request / Extraer una consulta</b>
 		<br>
 		-Seleccionar el botón <i>Pull request</i> en la barra superior izquierda.
 		<br>
@@ -195,7 +219,7 @@ $(document).ready(function(){
 		<br>
 		-Dentro de la caja de texto describa los cambios realizados.
 		<br><br>
-		<b>Pull Request:</b>  Una vez que se hayan realizado los commits deseados, se crea un Pull request. <br>
+		<b id="pasos5">Pull Request:</b>  Una vez que se hayan realizado los commits deseados, se crea un Pull request. <br>
 		Es la revisión y comparación de el branch master y el brach nuevo que se haya creado. <br>
 		Se presta para que otras personas revisen y comparen el código antes de realizar un merge.
 
@@ -207,22 +231,37 @@ $(document).ready(function(){
  	<br>
 
 <div id="git6" align="center">
-	<img src="img/trekkie.png" id="cat6">
+	<span id="tool6">Merge</span>
+	<img src="img/trekkie.png" id="cat6" align="center">
 	<p id="txt5" >
 
-		<b>Paso 5: Merge / Fusión</b>
-		<br>
+		<b id="paso6">Paso 5: Merge / Fusión</b>
+		<br><br>
 		-Click sobre el botón <b id="verde">verde</b> <i> Merge pull request</i> para fusionar los cambios a "master". 
 		<br>
 		-Click <i>Confirm merge.</i>
 		<br>
 		-Continúe y elimine la branch <i>Edit</i>, ya que sus cambios se han incorporado al branch "master", con el botón  <b id="morado">morado</b> <i> Delete</i>.
 		<br><br>
-		<b>Merge: Permite fusionar el o los branch al master una vez que se hayan concluidos los cambios deseados.   
-</b>
+		<b id="pasos6">Merge: </b>
+		Permite fusionar el o los branch al master una vez que se hayan concluidos los cambios deseados.   
+
 
 	</p>
 </div>
+
+	<br>
+	<br>
+	<br>
+
+<footer id="pie">
+	<a href="https://guides.github.com/activities/hello-world/" id="aa">Guía GitHub</a>
+
+	<a href="https://github.com/ProyectoFinalCalidad/Proyecto_Final">Mi repositorio</a>
+	<a href="https://guides.github.com/"> Otras Guías</a>
+	<a href="https://www.youtube.com/githubguides">GitHub en Youtube</a>
+
+</footer>
 
 </body>
 </html>
